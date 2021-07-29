@@ -8,7 +8,7 @@ struct array{
 void merge(struct array *arr1,struct array *arr2){
       struct array *arr3=(struct array *)malloc(sizeof(struct array));
       int i=0,j=0,k=0;
-    while(i<arr1->length){
+    while(i<arr1->length && j<arr2->length){
         if(arr1->a[i]<arr2->a[j]){
             arr3->a[k++]=arr1->a[i++];
         }
